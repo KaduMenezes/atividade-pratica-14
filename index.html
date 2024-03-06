@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Aleatório</title>
+    <!-- Link para o Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Cor de fundo cinza claro */
+            color: #333; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff; /* Cor de fundo azul */
+            color: white; /* Cor do texto branco */
+            padding: 20px; /* Espaçamento interno */
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #343a40; /* Cor de fundo cinza escuro */
+            color: white; /* Cor do texto branco */
+            padding: 20px; /* Espaçamento interno */
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Site Aleatório</h1>
+        <p>Um exemplo básico usando HTML, CSS e Bootstrap</p>
+    </header>
+
+    <!-- Corpo da página -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Seção 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero ac purus malesuada, eget feugiat purus rutrum.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Seção 2</h2>
+                    <p>Integer semper ligula sit amet massa placerat, vitae scelerisque leo posuere. Sed vitae arcu ullamcorper, tincidunt massa non, sodales ligula.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Seção 3</h2>
+                    <p>Vestibulum eget enim a magna scelerisque varius nec ac velit. Sed nec ante euismod, eleifend eros eget, consectetur ipsum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="ano"></span> Meu Site Aleatório. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para exibir o ano atual no rodapé -->
+    <script>
+        document.getElementById('ano').innerText = new Date().getFullYear();
+    </script>
+
+    <!-- Link para o Bootstrap JS via CDN (opcional, se necessário utilizar componentes JavaScript do Bootstrap) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+</html>
